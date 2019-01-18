@@ -1,0 +1,48 @@
+body {
+	height: 100%;
+	width: 100vw;
+	display: flex;
+	margin: 0;
+}
+
+/* When writing CSS classes it is VERY important that you use hyphen delimited strings (square-div and NOT squareDiv) */
+/* Addtionally, you should know what the class does just by looking at the name (the name should be DESCRIPTIVE) */
+/* When thinking about sizing elements on your page, there are many different units you can use = https://www.w3schools.com/cssref/css_units.asp */
+.mini {
+	height: 100%;
+	width: 50%;
+}
+
+/* When possible, organize CSS classes in alphabetical order */
+
+
+.pink {
+	background-color: #EDAAC6;
+	height: calc(100%/3);
+	width: 100%;
+	display: block;
+}
+
+.purple {
+	background-color: #9B8FD2;
+	height: calc(100%/3);
+	width: 100%;
+	display: block;
+}
+.blue {
+	background-color: #4C4CFF;
+}
+
+/* Use this class on the PARENT of whatever you are trying to center; remember that the PARENT tells the CHILD what to do! */
+/* NOTE: Centering content only works when the display property is "flex"! */
+.center-content {
+	align-items: center;
+	justify-content: center;
+	display: flex;
+}
+
+/* Use this class on your image to restrict the size so it stays completely within it's parent div */
+.restrict-img-size {
+	max-height: 100%;
+	max-width: 100%;
+}
